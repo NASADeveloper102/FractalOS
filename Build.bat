@@ -1,0 +1,1 @@
+csc -out:Build/FractalOS.exe Source/*.cs -reference:Lib/OpenTK.dll
