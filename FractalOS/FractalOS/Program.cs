@@ -1,10 +1,12 @@
-﻿namespace FractalOS
+﻿using System;
+
+namespace FractalOS
 {
     internal class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
-            System.Console.WriteLine("Hey NasaDeveloper lol");
+            Console.WriteLine("Hey NasaDeveloper lol");
         }
     }
 }
