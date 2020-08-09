@@ -17,7 +17,7 @@ namespace FractalOS
             this.window.UpdateFrame += Update;
             this.window.Closing += Close;
 
-            this.window.Run(1/60);
+            this.window.Run(1/60); // Runs the OS at a maximum of 60 fps
         }
         public void Load(object sender, EventArgs e)
         {
