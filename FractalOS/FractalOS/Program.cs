@@ -7,7 +7,7 @@ namespace FractalOS
     {
         public static void Main()
         {
-            OperatingSystem Orange = new OperatingSystem(new GameWindow(800, 600, GraphicsMode.Default, "FractalOS", GameWindowFlags.Fullscreen));
+            OperatingSystem Orange = new OperatingSystem(new GameWindow(800, 600, GraphicsMode.Default, "FractalOS", GameWindowFlags.Default));
         }
     }
 }

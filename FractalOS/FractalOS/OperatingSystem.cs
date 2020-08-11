@@ -17,8 +17,9 @@ namespace FractalOS
             this.window.UpdateFrame += Update;
             this.window.Closing += Close;
 
-            this.window.Run(1/60); // Runs the OS at a maximum of 60 fps
+            this.window.Run(60.0); // Runs the OS at a maximum of 60 fps
         }
+        
         public void Load(object sender, EventArgs e)
         {
             GL.ClearColor(0.0f, 0.0f, 0.0f, 1.0f);
@@ -28,8 +29,13 @@ namespace FractalOS
             GL.Clear(ClearBufferMask.ColorBufferBit);
             GL.Flush();
 
-
+            GL.Begin(PrimitiveType.Triangles);
+            GL.Vertex2(-0.5,-0.5);
+            GL.Vertex2(0,0.5);
+            GL.Vertex2(0.5,-0.5);
+            GL.End();
             window.SwapBuffers();
+            
         }
         public void Update(object sender, FrameEventArgs e)
         {
